@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8e1;
+  line-height: 1.6;
+  overflow-x: hidden; /* Remove o overflow horizontal global */
+  height: 100%; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; /* Evita overflow horizontal */
+}
+
+.text-content{
+  flex-grow: 1;
+  background: #fff4e1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; /* Padding ajustado para responsividade */
+}
+
+.text-content input{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  font-size: 1rem;
+  border-radius: 1rem; /* Ajuste do border-radius */
+  margin: 1rem;
+}
+
+.text-content button{
+  display: flex;
+  margin: 0 0.5rem; 
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(128, 0, 0);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.content {
+  flex-grow: 1;
+  background: #fff4e1;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content img {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem; 
+}
+
+.sidebar {
+  display: flex;
+  background: #982B1C;
+  padding: 1rem; /* Padding ajustado para responsividade */
+  flex-direction: row; /* Alinha os itens em linha */
+  justify-content: space-evenly; /* Distribui os itens de forma uniforme */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.sidebar img {
+  width: 90px; 
+  height: auto;
+}
+
+.sidebar a {
+  display: block;
+  margin: 0 0.5rem; /* Margem lateral para separar os links */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(128, 0, 0);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sidebar a:hover {
+  background-color: #c17167;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  background: rgb(128, 0, 0);
+  color: white;
+  padding: 1rem; /* Padding ajustado para responsividade */
+  text-align: center;
+  font-size: 1.0rem; /* Font-size ajustado para responsividade */
+  flex-shrink: 0; /* Evita que o rodapé encolha */
+}
+
+.footer p {
+  margin-left: 20px;
+}
+
+.icon-container{
+  display: flex;
+  font-size: 2rem;
+}
+
+.p-error{
+  color: red;
+  padding: 0.2rem;
+}
+
+
+.crypto-container {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(128, 0, 0);
+  color:white;
+}
+
+.crypto-img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.crypto-title {
+  margin: 0;
+}
+
+.crypto-price {
+  margin-left: 0.1rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
